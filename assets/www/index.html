@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta id="testViewport" name="viewport" content="user-scalable=yes, initial-scale=1.5, maximum-scale=2, minimum-scale=1, width=device-width" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <title>123EasyWebsites</title>
+
+    </head>
+    <body>
+    <div id="indexPage" data-role="page" class="ui-responsive-panel main_page">
+        <div data-role="header" data-tap-toggle="false" data-position="fixed" data-theme="f">
+            <h1>123EasyDate</h1>
+        </div>
+
+        <div data-role="content">
+            <div class="ui-bar ui-bar-a">
+                <form class="login_form">
+                    <h2>Login</h2>
+                    <label>Email:</label>
+                    <input type="email" name="email" data-email="email" value=""  autocomplete="off">
+                    <label>Password:</label>
+                    <input type="password" name="password" data-password="password" value="" autocomplete="off">
+                    <input type="button" data-theme="b" name="login" id="login" value="Login">
+                    <a href="#create-account-pannel" type="submit" data-theme="d">Create Account</a>
+                </form>
+            </div>
+        </div>
+
+        <!-- create account panel -->
+        <div data-role="panel" data-position="right" data-dismissible="false" data-position-fixed="true" data-display="overlay" data-theme="b" class="dark-pannel" id="create-account-pannel">
+            <form class="create_account_form">
+                <h2>Create Account</h2>
+                <label>Name:</label>
+                <input type="text" name="name"  data-name="name" value=""  >
+                <label>Email:</label>
+                <input type="email" name="email"  data-email="email" value=""  >
+                <label>Password:</label>
+                <input type="password" name="password" data-password="password" value="" autocomplete="off">
+                <label>Repeat Password:</label>
+                <input type="password" name="repeat-password" data-repeat-password="repeat-password" value="" autocomplete="off">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><a href="#" data-rel="close" data-role="button" data-theme="c">Cancel</a></div>
+                    <div class="ui-block-b"><input type="button" data-theme="b" name="create_account" id="create_account" value="Save"></div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="cordova-2.7.0.js"></script>
+    <script type="text/javascript" src="js/lib/cordova-plugins.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.js"></script>
+    <script type="text/javascript" src="js/lib/functions_before.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.mobile-1.3.1.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.ui.map.full.min.js"></script>
+    <script type="text/javascript" src="js/lib/energize.js"></script>
+    <script type="text/javascript" src="js/lib/functions_after.js"></script>
+    </body>
+</html>

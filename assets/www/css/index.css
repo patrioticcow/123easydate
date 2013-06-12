@@ -1,0 +1,59 @@
+html,body{overflow-y:hidden}
+.frame {
+    height: 100% ;
+    width: 100% ;
+    border: 0  ;
+    background-color: green ;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.ui-content {
+    margin: 0   !important;
+    padding: 0   !important;
+    border: 0   !important;
+    outline: 0   !important;
+    height: 100%;
+    overflow: hidden;
+}
+.ui-content {
+    padding: 0;
+    height: 100%;
+}
+
+.dark-pannel{
+    background: #1C1D22;
+    color: #fff;
+}
+
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+}
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+}
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px){
+}
+
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2){
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (min-width: 768px){
+    .ui-panel-closed { width: 17em; }
+    .ui-panel-content-wrap.ui-body-a.ui-panel-animate.ui-panel-content-wrap-closed{ margin-left:17em; }
+}
+
+/* #### Desktops #### */
+@media screen and (min-width: 1024px){
+
+}
