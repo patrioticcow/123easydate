@@ -30,6 +30,11 @@ html,body{overflow-y:hidden}
     color: #fff;
 }
 
+.ui-body-c, .ui-panel{
+    background: transparent url('../images/bg.jpg') repeat;
+}
+
+.ui-input-text{background: #ffffff !important;}
 
 /* #### Mobile Phones Portrait #### */
 @media screen and (max-device-width: 480px) and (orientation: portrait){

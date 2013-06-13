@@ -22,6 +22,7 @@
     <orderEntry type="library" name="backgroundserviceplugin-2.7.0" level="project" />
     <orderEntry type="library" name="jquery.ui.map.full.min" level="application" />
     <orderEntry type="library" name="cordova-2.7.0" level="application" />
+    <orderEntry type="library" name="cordova-2.8.1" level="project" />
   </component>
 </module>
 

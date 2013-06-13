@@ -8,10 +8,9 @@
     <ignored path="123easydate.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/res/layout/main.xml" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1368937818137" ignored="false" />
-    <file path="$PROJECT_DIR$/res/values/strings.xml" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1368937818137" ignored="false" />
     <file path="/fragment.java" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1368945857214" ignored="false" />
     <file path="/jquery.js" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1368946325278" ignored="false" />
-    <file path="/index.html" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1370162315283" ignored="false" />
+    <file path="/index.html" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1371101698441" ignored="false" />
     <file path="/cordova_plugins.json" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1368948289902" ignored="false" />
     <file path="/index.js" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1369008047726" ignored="false" />
     <file path="/main.html" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1370106198387" ignored="false" />
@@ -20,15 +19,16 @@
     <file path="/loginform.js" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1368960053732" ignored="false" />
     <file path="/user.js" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1368960217579" ignored="false" />
     <file path="/main.js" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1369007138524" ignored="false" />
-    <file path="/a.dummy" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1369693806831" ignored="false" />
+    <file path="/a.dummy" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1371096190379" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1369010884094" ignored="false" />
     <file path="/easydate.java" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1369010917907" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/android/lib/android.jar!/org/jetbrains/android/android.xsd" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1369689061186" ignored="false" />
-    <file path="/functions_after.js" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1370163269278" ignored="false" />
+    <file path="/functions_after.js" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1371101996577" ignored="false" />
     <file path="/DateService.java" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1369692489849" ignored="false" />
     <file path="/functions_before.js" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1369693940955" ignored="false" />
     <file path="/backgroundService-2.7.0.js" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1369694438556" ignored="false" />
-    <file path="/index.css" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1369974268057" ignored="false" />
+    <file path="/index.css" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1371093162567" ignored="false" />
+    <file path="/config.xml" changelist="bf3df29a-70a1-44ef-a954-892ae477600f" time="1371101374134" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +48,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -84,7 +85,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -99,16 +99,7 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="38" column="79" selection-start="1982" selection-end="1982" vertical-scroll-proportion="0.28673837">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/www/main.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="18" column="47" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
+                <state line="32" column="104" selection-start="1577" selection-end="1577" vertical-scroll-proportion="0.4730539">
                   <folding />
                 </state>
               </provider>
@@ -127,24 +118,32 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="functions_after.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="functions_after.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/www/js/lib/functions_after.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="35" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
+                <state line="134" column="86" selection-start="5716" selection-end="5716" vertical-scroll-proportion="0.23501763">
                   <folding>
-                    <marker date="1370163467232" expanded="true" signature="207:311" placeholder="CREATE TABLE..users..." />
-                    <marker date="1370163467232" expanded="true" signature="346:531" placeholder="CREATE TABLE..userdetails..." />
-                    <marker date="1370163467232" expanded="true" signature="566:769" placeholder="CREATE TABLE..hangout..." />
-                    <marker date="1370163467232" expanded="true" signature="1165:1285" placeholder="INSERT INTO ..." />
+                    <element signature="e#4306#4518#0" expanded="false" />
+                    <element signature="e#4554#4922#0" expanded="false" />
+                    <element signature="e#4945#5008#0" expanded="false" />
+                    <marker date="1371102128801" expanded="true" signature="207:311" placeholder="CREATE TABLE..users..." />
+                    <marker date="1371102128801" expanded="true" signature="346:531" placeholder="CREATE TABLE..userdetails..." />
+                    <marker date="1371102128801" expanded="true" signature="566:769" placeholder="CREATE TABLE..hangout..." />
+                    <marker date="1371102128801" expanded="true" signature="1131:1273" placeholder="INSERT INTO ..." />
+                    <marker date="1371102128801" expanded="true" signature="1131:1198" placeholder="INSERT INTO ..." />
+                    <marker date="1371102128801" expanded="true" signature="1913:1933" placeholder="SELECT FROM users..." />
+                    <marker date="1371102128801" expanded="true" signature="1913:1998" placeholder="SELECT FROM users..." />
+                    <marker date="1371102128801" expanded="true" signature="1913:1980" placeholder="SELECT FROM users..." />
+                    <marker date="1371102128801" expanded="true" signature="1913:1948" placeholder="SELECT FROM users..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.css" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/www/css/index.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="50" column="0" selection-start="993" selection-end="1060" vertical-scroll-proportion="0.65357965">
+                <state line="36" column="14" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -162,20 +161,20 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/assets/www/js/lib/cordova-plugins.js" />
         <option value="$PROJECT_DIR$/src/com/easy/date/easydate.java" />
         <option value="$PROJECT_DIR$/src/com/easy/date/DateService.java" />
-        <option value="$PROJECT_DIR$/res/xml/config.xml" />
         <option value="$PROJECT_DIR$/src/com/easy/date/MyService.java" />
         <option value="$PROJECT_DIR$/assets/www/js/lib/backgroundService-2.7.0.js" />
         <option value="$PROJECT_DIR$/assets/www/js/lib/myService-2.7.0.js" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/assets/www/css/jquery.mobile.flatui.css" />
         <option value="$USER_HOME$/Desktop/jquery-ui-map-3.0-rc/demos/jquery-google-maps-mobile-boilerplate.html" />
-        <option value="$PROJECT_DIR$/assets/www/css/index.css" />
         <option value="$PROJECT_DIR$/assets/www/main.html" />
         <option value="$PROJECT_DIR$/assets/www/js/main.js" />
         <option value="$PROJECT_DIR$/assets/www/js/lib/functions_before.js" />
+        <option value="$PROJECT_DIR$/assets/www/css/index.css" />
+        <option value="$PROJECT_DIR$/assets/www/config.xml" />
+        <option value="$PROJECT_DIR$/res/xml/config.xml" />
         <option value="$PROJECT_DIR$/assets/www/index.html" />
         <option value="$PROJECT_DIR$/assets/www/js/lib/functions_after.js" />
       </list>
@@ -244,6 +243,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -290,11 +290,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,7 +304,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
+              <option name="myItemId" value="gen" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -327,6 +323,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="123easydate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="123easydate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -349,32 +367,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="123easydate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="123easydate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -425,7 +417,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,26 +431,26 @@
     <property name="JavaScriptLanguageLevel" value="ES5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/www/cordova-2.7.0.js" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="JavaScriptPreferStrict" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="01b0e5fe8f49b884" />
+    <property name="JavaScriptPreferStrict" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="android" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\123easydate\assets\www\js\lib" />
       <recent name="C:\xampp\htdocs\123easydate\libs" />
+      <recent name="C:\xampp\htdocs\123easydate\assets\www" />
+      <recent name="C:\xampp\htdocs\123easydate\assets\www\js\lib" />
       <recent name="C:\xampp\htdocs\123easydate\res\drawable-xhdpi" />
       <recent name="C:\xampp\htdocs\123easydate\res\drawable-mdpi" />
-      <recent name="C:\xampp\htdocs\123easydate\res\drawable-ldpi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\123easydate\assets\www\js" />
@@ -499,6 +490,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -525,19 +529,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -629,36 +620,36 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="0" width="3845" height="1036" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.6703786" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.06884727" sideWeight="0.6707865" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.32921347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="3197" y="691" width="596" height="293" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.32921347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="3291" y="730" width="502" height="254" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="3292" y="122" width="501" height="565" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="3292" y="122" width="501" height="565" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -729,40 +720,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/easy/date/easydate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/cordova-2.7.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="12" selection-start="6175" selection-end="6175" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="18" selection-start="2660" selection-end="2660" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/css/jquery.mobile.flatui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="34" selection-start="12324" selection-end="12324" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/js/lib/backgroundService-2.7.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="25" selection-start="6032" selection-end="6032" vertical-scroll-proportion="0.2824074" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/jquery-ui-map-3.0-rc/demos/jquery-google-maps-basic-example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/js/lib/jquery.ui.map.full.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -795,36 +752,86 @@
         <state line="7" column="47" selection-start="265" selection-end="280" vertical-scroll-proportion="0.16166282" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="14" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/cordova.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/easy/date/easydate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="21" selection-start="93" selection-end="101" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/easy/date/MyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="256" selection-end="256" vertical-scroll-proportion="0.09259259">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="27" selection-start="2266" selection-end="2266" vertical-scroll-proportion="0.5787037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/xml/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="34" selection-start="124" selection-end="124" vertical-scroll-proportion="0.047675803">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="47" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
+        <state line="18" column="47" selection-start="971" selection-end="971" vertical-scroll-proportion="-0.34131736">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="79" selection-start="1982" selection-end="1982" vertical-scroll-proportion="0.28673837">
+        <state line="32" column="104" selection-start="1577" selection-end="1577" vertical-scroll-proportion="0.4730539">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/js/lib/functions_after.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="35" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
+        <state line="134" column="86" selection-start="5716" selection-end="5716" vertical-scroll-proportion="0.23501763">
           <folding>
-            <marker date="1370163467232" expanded="true" signature="207:311" placeholder="CREATE TABLE..users..." />
-            <marker date="1370163467232" expanded="true" signature="346:531" placeholder="CREATE TABLE..userdetails..." />
-            <marker date="1370163467232" expanded="true" signature="566:769" placeholder="CREATE TABLE..hangout..." />
-            <marker date="1370163467232" expanded="true" signature="1165:1285" placeholder="INSERT INTO ..." />
+            <element signature="e#4306#4518#0" expanded="false" />
+            <element signature="e#4554#4922#0" expanded="false" />
+            <element signature="e#4945#5008#0" expanded="false" />
+            <marker date="1371102128801" expanded="true" signature="207:311" placeholder="CREATE TABLE..users..." />
+            <marker date="1371102128801" expanded="true" signature="346:531" placeholder="CREATE TABLE..userdetails..." />
+            <marker date="1371102128801" expanded="true" signature="566:769" placeholder="CREATE TABLE..hangout..." />
+            <marker date="1371102128801" expanded="true" signature="1131:1273" placeholder="INSERT INTO ..." />
+            <marker date="1371102128801" expanded="true" signature="1131:1198" placeholder="INSERT INTO ..." />
+            <marker date="1371102128801" expanded="true" signature="1913:1933" placeholder="SELECT FROM users..." />
+            <marker date="1371102128801" expanded="true" signature="1913:1998" placeholder="SELECT FROM users..." />
+            <marker date="1371102128801" expanded="true" signature="1913:1980" placeholder="SELECT FROM users..." />
+            <marker date="1371102128801" expanded="true" signature="1913:1948" placeholder="SELECT FROM users..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="993" selection-end="1060" vertical-scroll-proportion="0.65357965">
-          <folding />
         </state>
       </provider>
     </entry>

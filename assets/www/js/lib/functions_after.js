@@ -14,16 +14,12 @@ var LocalDatabase = {
         if(type === 'users'){
             var name = window.localStorage.getItem("name");
             if(!name){
-                console.log('2');
                 db.transaction(
                     function(tx){
-                        tx.executeSql('INSERT INTO users (name, email, password, active, created) VALUES (data.name, data.email, data.password, 1, Misc.time())');
+                        tx.executeSql('INSERT INTO users (name, email, password, active, created) VALUES ("'+data.name+'", "'+data.email+'", "'+data.password+'", 1, '+Misc.time()+')');
                     },
-                    function(err){
-                        console.log("Error processing SQL: "+err.code);
-                    },
+                    function(err){ console.log(err); },
                     function(){
-                        console.log('success');
                         window.localStorage.setItem("name", data.name);
                         window.localStorage.setItem("email", data.email);
                         window.localStorage.setItem("loggedin", 1);
@@ -31,11 +27,31 @@ var LocalDatabase = {
                 );
             }
         }
+    },
+    query: function (type, data) {
+        var db = window.openDatabase("eadydate", "1.0", "EasyDate DB", 1000000);
+        if(type === 'login'){
+            db.transaction(
+                function(tx){
+                    tx.executeSql('SELECT * FROM users WHERE email = "'+data.email+'" AND password = "'+data.password+'"', [], querySuccess ,queryError);
+                },
+                queryError
+            );
+        }
+        function queryError(err) { console.log(err); }
+
+        function querySuccess(tx, results) {
+            var len = results.rows.length;
+            for (var i=0; i<len; i++){
+                Misc.showAlert(JSON.stringify(results.rows.item(i)), 'test');
+            }
+        }
     }
 
 }
+
 // create some tables
-LocalDatabase.db;
+LocalDatabase.db();
 
 var LocalStorage = {
     type: "test",
@@ -58,22 +74,24 @@ var Misc = {
         var password        = $('.'+form).find("[data-password='password']");
         var repeatPassword  = $('.'+form).find("[data-repeat-password='repeat-password']");
 
-        if (typeof name !== "undefined") {
-            if(name.val() === '' ){ alert('Name field is empty'); return false; }
-            if(name.val().length < 3){ alert('Name needs to be at least 3 characters'); return false; }
+        if (name.length !== 0) {
+            if(name.val() === '' ){ this.showAlert('Name field is empty', 'Error'); return false; }
+            if(name.val().length < 3){ this.showAlert('Name needs to be at least 3 characters', 'Error'); return false; }
         }
-        if (typeof email !== "undefined") {
-            if(email.val() === '' ){ alert('Email field is empty'); return false; }
-            if(this.validateEmail(email.val()) != true){ alert('Email not valid'); return false; }
+        if (email.length !== 0) {
+            if(window.localStorage.getItem("email")) { this.showAlert('Duplicate email, Please enter a different one.', 'Error'); return false; }
+            if(email.val() === '' ){ this.showAlert('Email field is empty', 'Error'); return false; }
+            if(this.validateEmail(email.val()) != true){ this.showAlert('Email not valid', 'Error'); return false; }
         }
-        if (typeof password !== "undefined") {
-            if(password.val() === '' ){ alert('Password field is empty'); return false; }
-            if(password.val().length < 5 ){ alert('Password needs to be at least 5 characters'); return false; }
+        if (password.length !== 0) {
+            if(password.val() === '' ){ this.showAlert('Password field is empty', 'Error'); return false; }
+            if(password.val().length < 5 ){ this.showAlert('Password needs to be at least 5 characters', 'Error'); return false; }
         }
-        if (typeof repeatPassword !== "undefined") {
-            if(repeatPassword.val() === '' ){ alert('Repeat Password field is empty'); return false; }
-            if(repeatPassword.val() !== password.val() ){ alert('Passwords don\'t match'); return false; }
+        if (repeatPassword.length !== 0) {
+            if(repeatPassword.val() === '' ){ this.showAlert('Repeat Password field is empty', 'Error'); return false; }
+            if(repeatPassword.val() !== password.val() ){ this.showAlert('Passwords don\'t match', 'Error'); return false; }
         }
+
     },
 
     validateEmail: function(email) {
@@ -98,29 +116,43 @@ var Misc = {
 
     time: function(){
         return Math.round(new Date().getTime() / 1000);
+    },
+
+    showAlert: function (message, title) {
+        if (navigator.notification) {
+            navigator.notification.alert(message, null, title, 'OK');
+        } else {
+            alert(title ? (title + ": " + message) : message);
+        }
     }
 }
 
 // #indexPage
 $(document).on('pagecreate', '#indexPage', function (e) { console.log('%c pagecreate indexPage', 'background: #222; color: #bada55');
-    if (User.checkIfLoggedIn()){
-        //$.mobile.changePage( "main.html");
-    }
+    if(window.localStorage.getItem("loggedin")) { $.mobile.changePage( "main.html"); }
 });
-$(document).on('pageinit', '#indexPage', function (e) { console.log('%c pageinit indexPage', 'background: #222; color: #bada55'); });
+$(document).on('pageinit', '#indexPage', function (e) { console.log('%c pageinit indexPage', 'background: #222; color: #bada55');
+    if(window.localStorage.getItem("loggedin")) { $.mobile.changePage( "main.html"); }
+});
 $(document).on('pagebeforeshow', '#indexPage', function (e) { console.log('%c pagebeforeshow indexPage', 'background: #222; color: #bada55');
+    if(window.localStorage.getItem("loggedin")) { $.mobile.changePage( "main.html"); }
     $(document).on('click', '#login', function() {
-        Misc.validateForm('login_form');
+        if (Misc.validateForm('login_form') !== false) {
+            var form = $('.login_form');
+            var formDataJson = Misc.serializeObject(form.serializeArray());
+            LocalDatabase.query('login', formDataJson);
+        }
     });
 
     $(document).on('click', '#create_account', function() {
-        Misc.validateForm('create_account_form');
-        var form = $('.create_account_form');
-        var formData = form.serialize();
-        var formDataJson = Misc.serializeObject(form.serializeArray());
+        if (Misc.validateForm('create_account_form') !== false) {
+            var form = $('.create_account_form');
+            var formData = form.serialize();
+            var formDataJson = Misc.serializeObject(form.serializeArray());
 
-        // TODO save data to server and local database
-        LocalDatabase.insert('users', formDataJson);
+            // TODO save data to server and local database
+            LocalDatabase.insert('users', formDataJson);
+        }
     });
 });
 
